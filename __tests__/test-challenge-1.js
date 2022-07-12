@@ -35,6 +35,6 @@ maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () =
     }  
 
 console.log("The sum is " + plus(numbers));
-    //expect(sumOfNumbers(numbers)).toBe(75);
+    expect(sumOfNumbers(numbers)).toBe(75);
 });
 
