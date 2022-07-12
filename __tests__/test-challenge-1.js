@@ -31,8 +31,7 @@ maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () =
         let sum = 0;  
         for (let i = 0; i < maybe.length; i++)  
             sum += maybe[i];  
-    
-        return sum;  
+      return sum
     }  
 
 console.log("The sum is " + plus(numbers));
