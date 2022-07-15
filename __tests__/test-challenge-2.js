@@ -27,9 +27,15 @@ maybe('Challenge - 2 : my countEvenNumbers function can count even numbers in ar
         64
     ]
 
- let getEven = numbers.filter(number => number % 2 == 0);
-  
-
-  console.log('The Even Numbers are  ' + getEven.length);
-    expect(countEvenNumbers(numbers)).toBe(9);
+ function countEvenNumber(numbers) {
+    var count = 0
+   for (var i =0; i < numbers.length; i++){
+     if (numbers[i] % 2 === 0)
+     {count++;}}
+             
+         return count;   
+        }
+  console.log("The evens are " + countEvenNumber(numbers));
+    expect(countEvenNumber(numbers)).toBe(9);
 });
+

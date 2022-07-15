@@ -1,6 +1,8 @@
 const assignment = require('../src/assignment.js');
 
 const { sumOfNumbers } = assignment;
+
+
 const maybe = sumOfNumbers === undefined ? test.skip : test;
 
 maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () => {
@@ -27,14 +29,16 @@ maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () =
         -50
     ];
 
-  function plus(numbers) {  
-        let sum = 0;  
-        for (let i = 0; i < maybe.length; i++)  
-            sum += maybe[i];  
+  function plus(numbers){  
+         let sum = 0; 
+        for (let i = 0; i < numbers.length; i++)  
+            sum += numbers[i];  
       return sum
     }  
-
 console.log("The sum is " + plus(numbers));
-    expect(sumOfNumbers(numbers)).toBe(75);
+
+
+    expect(plus(numbers)).toBe(75);
 });
+
 
