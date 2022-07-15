@@ -27,7 +27,7 @@ maybe('Challenge - 2 : my countEvenNumbers function can count even numbers in ar
         64
     ]
 
- function countEvenNumber(numbers) {
+ function countEvenNumbers(numbers) {
     var count = 0
    for (var i =0; i < numbers.length; i++){
      if (numbers[i] % 2 === 0)
@@ -35,7 +35,7 @@ maybe('Challenge - 2 : my countEvenNumbers function can count even numbers in ar
              
          return count;   
         }
-  console.log("The evens are " + countEvenNumber(numbers));
-    expect(countEvenNumber(numbers)).toBe(9);
+  console.log("The evens are " + countEvenNumbers(numbers));
+    expect(countEvenNumbers(numbers)).toBe(9);
 });
 

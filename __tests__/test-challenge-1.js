@@ -29,16 +29,16 @@ maybe('Challenge - 1 : my sumNumbers function can sum an array of numbers', () =
         -50
     ];
 
-  function plus(numbers){  
+  function sumOfNumbers(numbers){  
          let sum = 0; 
         for (let i = 0; i < numbers.length; i++)  
             sum += numbers[i];  
       return sum
     }  
-console.log("The sum is " + plus(numbers));
+console.log("The sum is " + sumOfNumbers(numbers));
 
 
-    expect(plus(numbers)).toBe(75);
+    expect(sumOfNumbers(numbers)).toBe(75);
 });
 
 
